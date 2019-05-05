@@ -16,6 +16,7 @@ app.use(require("./routs/index"));
 
 //habilitar la carpeta public (middleware de expres)
 app.use(express.static(path.resolve(__dirname, '../public')));
+app.use(express.static(path.resolve(__dirname, '../views')));
 
 //coneccion a la base de datos 
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useCreateIndex: true },
