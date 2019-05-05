@@ -124,6 +124,7 @@ app.delete('/usuario/:id', [verificaToken, verificaAdminRole], function(req, res
             usuario: usuarioDB
         });
 
+
     })
 
 
